@@ -1,12 +1,15 @@
 
 import './App.css';
+
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    <div >
+    <div className='bg-[#efefef]'>
       <Navbar/>
-      {/* y<Outlet/> */}
+      <Home/>
     </div>
   );
 }

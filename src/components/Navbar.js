@@ -27,28 +27,28 @@ function Navbar() {
           </div>
 
           <div
-            className={`px-3 flex flex-col items-center justify-center gap-3 py-5 rounded-sm ${isMenuOpen ? "" : "hidden"
+            className={`px-3 text-base flex flex-col items-center justify-center gap-3 py-5 rounded-sm ${isMenuOpen ? "" : "hidden"
               }`}
           >
 
           </div>
 
           <ul className="hidden md:flex flex items-center justify-center text-slate-500  gap-10 
-          font-sans text-xs">
+          font-sans text-base">
             <li>
-              <a href="#" className="text-lg hover:underline text-base">FAQ</a>
+              <a href="#" className=" hover:underline text-base">FAQ</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:underline text-base">Affiliate</a>
+              <a href="#" className=" hover:underline text-base">Affiliate</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:underline text-base">Pricing</a>
+              <a href="#" className=" hover:underline text-base">Pricing</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:underline text-base">Blog</a>
+              <a href="#" className=" hover:underline text-base">Blog</a>
             </li>
             <li>
-              <a href="#" className="text-lg hover:underline text-base">Contact</a>
+              <a href="#" className=" hover:underline text-base">Contact</a>
             </li>
 
           </ul>
@@ -67,25 +67,24 @@ function Navbar() {
             </button>
           </div>
 
-          
-          <div className={`lg:hidden fixed top-[4rem] left-0 w-full bg-[#efefef] z-10 ${
-          isMenuOpen ? "" : "hidden"
-        }`}>
-          <ul className="flex flex-col items-center gap-2 py-4 text-slate-500">
-            <li><a href="#" className="text-lg hover:underline text-base py-2">FAQ</a></li>
-            <li><a href="#" className="text-lg hover:underline text-base py-2">Affiliate</a></li>
-            <li><a href="#" className="text-lg hover:underline text-base py-2">Pricing</a></li>
-            <li><a href="#" className="text-lg hover:underline text-base py-2">Blog</a></li>
-            <li><a href="#" className="text-lg hover:underline text-base py-2">Contact</a></li>
-            <li>
-              <button className="w-32 h-10 bg-yellow-400 text-black hover:bg-yellow-200 drop-shadow-xl py-2 px-4 rounded-2xl mt-4">
-                Try for free
-              </button>
-            </li>
-          </ul>
-        </div>
+
+          <div className={`lg:hidden fixed top-[4rem] left-0 w-full bg-[#efefef] z-10 ${isMenuOpen ? "" : "hidden"
+            }`}>
+            <ul className="flex flex-col items-center gap-2 py-4 text-slate-500">
+              <li><a href="#" className="text-lg hover:underline text-base py-2">FAQ</a></li>
+              <li><a href="#" className="text-lg hover:underline text-base py-2">Affiliate</a></li>
+              <li><a href="#" className="text-lg hover:underline text-base py-2">Pricing</a></li>
+              <li><a href="#" className="text-lg hover:underline text-base py-2">Blog</a></li>
+              <li><a href="#" className="text-lg hover:underline text-base py-2">Contact</a></li>
+              <li>
+                <button className="w-32 h-10 bg-yellow-400 text-black hover:bg-yellow-200 drop-shadow-xl py-2 px-4 rounded-2xl mt-4">
+                  Try for free
+                </button>
+              </li>
+            </ul>
           </div>
-        
+        </div>
+
       </nav>
     </header>
   );
