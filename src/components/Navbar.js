@@ -11,8 +11,8 @@ function Navbar() {
   return (
     <header className="max-w-screen-2xl container mx-auto h-10">
       <nav className="bg-[#efefef] flex justify-between items-center  ">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className='flex items-center gap-2 text-2xl pl-10 '>
+        <div className="container mx-auto flex justify-between items-center ">
+          <div className='flex items-center gap-2 text-2xl pl-10 hover:cursor-pointer'>
             <img
               decoding="async"
               sizes="113px"
@@ -57,10 +57,10 @@ function Navbar() {
           </button>
 
 
-          <div className="md:hidden block">
+          <div className="md:hidden block mr-10">
             <button onClick={handleMenuToggler}>
               {isMenuOpen ? (
-                <FaXmark className="w-5 h-5 text-primary" />
+                <FaXmark className="w-5 h-5 text-primary m-20" />
               ) : (
                 <FaBarsStaggered className="w-5 h-5 text-primary" />
               )}

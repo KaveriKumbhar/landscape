@@ -1,9 +1,10 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
 
+
 const Home = () => {
   return (
-    <div className='mt-20 max-w-screen-2xl container mx-auto flex flex-col justify-center gap-y-10 pt-10 px-4 sm:px-6 lg:px-8'>
+    <div className='mt-20 max-w-screen-2xl container mx-auto flex flex-col justify-center gap-y-10 pt-10 px-4 sm:px-6 lg:px-8 '>
       <div className='flex items-center justify-center '>
         <a className='flex flex-row sm:flex-row justify-center gap-3 bg-[#1c1c1c] text-white p-1  rounded-2xl text-sm hover:cursor-pointer font-sans border-2  border-[#d9d9d9]'>
           <div className='flex justify-center items-center bg-[#00c82c]  rounded-xl pl-2 pr-2'>
@@ -52,16 +53,45 @@ const Home = () => {
           <button className='hidden lg:block text-black bg-yellow-400 hover:bg-yellow-200 drop-shadow-xl py-2 px-4 rounded-2xl'>
             Try for free
           </button>
-          <div className='relative flex justify-center mt-10' style={{ width: '120px' }}>
-            <img src='https://framerusercontent.com/images/qu3p1CVTcA51hxcrHdp0kWGBv8.png' alt='Person 1' className='rounded-full w-12 h-12 absolute' style={{ left: '0%' }} />
-            <img src='https://framerusercontent.com/images/2mXcwauLEfvaNQkLjPpPYVVtos.png' alt='Person 2' className='rounded-full w-12 h-12 absolute' style={{ left: '25%' }} />
-            <img src='https://framerusercontent.com/images/TYo9warB47QIM9Qv6K0p163790.png' alt='Person 3' className='rounded-full w-12 h-12 absolute' style={{ left: '50%' }} />
-            <img src='https://framerusercontent.com/images/YLdNx7Ji8qI3mK9gRdUlSiNUbHc.png' alt='Person 4' className='rounded-full w-12 h-12 absolute' style={{ left: '75%' }} />
+
+          <div className='flex justify-center items-center'>
+            <div className='flex flex-col justify-center items-center mt-10 w-full sm:w-64'>
+
+              <div className='relative flex justify-center mt-5' style={{ width: '120px' }}>
+                <img
+                  src='https://framerusercontent.com/images/qu3p1CVTcA51hxcrHdp0kWGBv8.png'
+                  alt='Person 1'
+                  className='rounded-full w-12 h-12 absolute transition-transform duration-500 ease-in-out hover:-translate-y-4'
+                  style={{ left: '0%' }}
+                />
+                <img
+                  src='https://framerusercontent.com/images/2mXcwauLEfvaNQkLjPpPYVVtos.png'
+                  alt='Person 2'
+                  className='rounded-full w-12 h-12 absolute transition-transform duration-500 ease-in-out hover:-translate-y-4'
+                  style={{ left: '25%' }}
+                />
+                <img
+                  src='https://framerusercontent.com/images/TYo9warB47QIM9Qv6K0p163790.png'
+                  alt='Person 3'
+                  className='rounded-full w-12 h-12 absolute transition-transform duration-500 ease-in-out hover:-translate-y-4'
+                  style={{ left: '50%' }}
+                />
+                <img
+                  src='https://framerusercontent.com/images/YLdNx7Ji8qI3mK9gRdUlSiNUbHc.png'
+                  alt='Person 4'
+                  className='rounded-full w-12 h-12 absolute transition-transform duration-500 ease-in-out hover:-translate-y-4'
+                  style={{ left: '75%' }}
+                />
+              </div>
+
+            </div>
           </div>
           <p className='flex items-center justify-center mt-12 text-[#767575] text-sm font-sans'>***** 5 stars from 256 users</p>
         </div>
       </div>
     </div>
+
+
   )
 }
 
