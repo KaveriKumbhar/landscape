@@ -3,10 +3,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className='mt-20 max-w-screen-2xl container mx-auto flex flex-col justify-center gap-y-38 pt-10'>
-      <div className='container mx-auto flex items-center justify-center mt-18 '>
-        <a className='flex justify-center gap-3 bg-[#1c1c1c] text-white p-1 rounded-2xl text-14 hover:cursor-pointer text-sm font-sans'>
-          <div className='bg-[#00c82c] p-1 rounded-xl'>
+    <div className='mt-20 max-w-screen-2xl container mx-auto flex flex-col justify-center gap-y-10 pt-10 px-4 sm:px-6 lg:px-8'>
+      <div className='flex items-center justify-center '>
+        <a className='flex flex-row sm:flex-row justify-center gap-3 bg-[#1c1c1c] text-white p-1  rounded-2xl text-sm hover:cursor-pointer font-sans border-2  border-[#d9d9d9]'>
+          <div className='flex justify-center items-center bg-[#00c82c]  rounded-xl pl-2 pr-2'>
             <p>New</p>
           </div>
           <div className='flex justify-center gap-3 items-center'>
@@ -16,29 +16,29 @@ const Home = () => {
         </a>
       </div>
 
-      <div className='pt-1 mt-10 flex flex-col justify-center items-center text-7xl gap-2'>
-        <h1 className='text-black font-sans'>
+      <div className=' flex flex-col justify-center items-center text-4xl sm:text-6xl lg:text-7xl gap-2'>
+        <h1 className='text-black font-sans text-center'>
           <b>
             <span className='text-[#AD2FFB]'>AI Lawyer </span>
             : your personal
           </b>
         </h1>
-        <h1 className='text-black font-sans'>
+        <h1 className='text-black font-sans text-center'>
           <b>legal AI assistant</b>
         </h1>
       </div>
 
-      <div className='mt-10 flex justify-center items-center pt-5 text-base relative'>
-        <div className='flex justify-center items-center max-w-lg'>
-          <div className='flex flex-col items-center gap-2 relative'>
-            <span className='flex items-center gap-2 relative'>for
+      <div className=' flex flex-col sm:flex-row justify-center items-center pt-5 text-base'>
+        <div className='flex flex-col sm:flex-row justify-center items-center max-w-lg'>
+          <div className='flex flex-col items-center gap-2'>
+            <span className='flex items-center gap-2'>for
               <h2 className='text-[#AD2FFB] font-sans'> Consumers</h2></span>
             <p className='text-center text-[#767575]'>Say goodbye to expensive legal consultation,
               long waits for appointments, and confusing legal texts.</p>
           </div>
-          <div className='mx-4 flex flex-col border-solid border-black border-l-2 h-28'></div> {/* This is the line */}
-          <div className='flex flex-col items-center gap-2 relative'>
-            <span className='flex items-center gap-2 relative'>for
+          <div className='w-28 h-0.5 m-5 border-solid bg-black my-4 sm:my-0 sm:w-0.5 sm:h-28'></div> {/* This is the line */}
+          <div className='flex flex-col items-center gap-2'>
+            <span className='flex items-center gap-2'>for
               <h2 className='text-[#2F43FB] font-sans'> Lawyers</h2></span>
             <p className='text-center text-[#767575]'>Say goodbye to routine tasks. AI Lawyer automates your legal research
               and paperwork, granting you more free time.
@@ -48,7 +48,7 @@ const Home = () => {
       </div>
 
       <div className='flex justify-center items-center'>
-        <div className='flex flex-col justify-center items-center mt-10 w-64'>
+        <div className='flex flex-col justify-center items-center mt-10 w-full sm:w-64'>
           <button className='hidden lg:block text-black bg-yellow-400 hover:bg-yellow-200 drop-shadow-xl py-2 px-4 rounded-2xl'>
             Try for free
           </button>
