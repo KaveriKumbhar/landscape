@@ -55,21 +55,26 @@ const WhoIs = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 m-5 pr-8 pt-5 w-full">
-                {cards.map((card, index) => (
-                    <div key={index} className="w-full bg-white p-6 shadow-lg flex flex-col justify-between rounded-3xl">
-                        <div className='flex flex-col justify-center items-center gap-2'>
-                            {card.icon}
-                            <div className='flex flex-col justify-center items-center'>
-                                <h5 className="text-xl sm:text-2xl font-semibold font-sans mb-2">{card.title}
-                                    <span className='text-xl sm:text-2xl font-sans mb-2 text-[#AD2FFB]'>{card.span}</span></h5>
-                            </div>
-                            <p className="text-sm sm:text-base flex justify-center items-center font-sans leading-6 space-x-5 text-gray-600 mb-4 max-w-xl mx-auto">{card.paragraph}</p>
-                        </div>
-                        <img src={card.imgSrc} alt={`Card ${index + 1}`} className="w-full h-64 mt-3 object-cover rounded" />
-                    </div>
-                ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 m-5 pr-8 pt-5 w-full justify-items-center">
+    {cards.map((card, index) => (
+        <div key={index} className="w-full bg-white p-6 shadow-lg flex flex-col justify-between items-center rounded-3xl">
+            <div className='flex flex-col justify-center items-center gap-2'>
+                {card.icon}
+                <div className='flex flex-col justify-center items-center'>
+                    <h5 className="text-xl sm:text-2xl font-semibold font-sans mb-2 text-center">
+                        {card.title}
+                        <span className='text-xl sm:text-2xl font-sans mb-2 text-[#AD2FFB]'>{card.span}</span>
+                    </h5>
+                </div>
+                <p className="text-sm sm:text-base flex justify-center items-center font-sans leading-6 space-x-5 text-gray-600 mb-4 max-w-xl mx-auto text-center">
+                    {card.paragraph}
+                </p>
             </div>
+            <img src={card.imgSrc} alt={`Card ${index + 1}`} className="w-full h-64 mt-3 object-cover rounded" />
+        </div>
+    ))}
+</div>
+
         </div>
     );
 }
